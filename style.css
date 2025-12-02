@@ -1,0 +1,95 @@
+:root {
+  --green: hsl(75, 94%, 57%);
+  --white: hsl(0, 0%, 100%);
+  --grey-700: hsl(0, 0%, 20%);
+  --grey-800: hsl(0, 0%, 12%);
+  --grey-900: hsl(0, 0%, 8%);
+}
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  /* 10px / 16px = 62.5% */
+}
+
+body {
+  font-family: "Figtree", sans-serif;
+  font-weight: 400;
+  background-color: var(--grey-900);
+  color: var(--white);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2.4rem;
+  padding: 2rem;
+}
+
+.card {
+  background-color: var(--grey-800);
+  border-radius: 12px;
+  padding: 4.2rem;
+  width: 100%;
+  max-width: 384px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-weight: 400;
+}
+
+.card-profile img {
+  width: 9rem;
+  height: 9rem;
+  border-radius: 50%;
+  margin-bottom: 2.4rem;
+  object-fit: cover;
+}
+
+.name {
+  font-size: 2.4rem;
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+}
+
+.location {
+  font-size: 1.4rem;
+  color: var(--green);
+  font-weight: bold;
+  margin-bottom: 2.4rem;
+}
+
+.card-bio {
+  font-size: 1.4rem;
+  margin-bottom: 2.4rem;
+}
+
+.card-socials {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.social-btn {
+  display: block;
+  background-color: var(--grey-700);
+  color: var(--white);
+  text-decoration: none;
+  font-size: 1.4rem;
+  font-weight: 700;
+  padding: 1.4rem;
+  border-radius: 7px;
+  transition: background-color 0.5s, color 0.5s;
+}
+
+.social-btn:hover {
+  background-color: var(--green);
+  color: var(--grey-900);
+}
